@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>zyro.games — Independent game studio</title>
+  <meta name="description" content="zyro.games is an independent studio making original 3D games for iOS and Android: puzzles, runners, action and adventure." />
+  <meta name="theme-color" content="#f3f1ec" />
+  <meta property="og:title" content="zyro.games — Independent game studio" />
+  <meta property="og:description" content="Original 3D games for iOS and Android: puzzles, runners, action and adventure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zyro.games" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 40 40">
+        <rect width="40" height="40" rx="10" fill="var(--logo-bg, #111)"/>
+        <path d="M10 10h20v5L17.5 25H23v5H10v-5l12.5-10H10z" fill="var(--logo-fg, #fff)"/>
+        <rect x="25" y="25" width="5" height="5" fill="var(--logo-px, #2f4bff)"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+      <symbol id="i-arrow-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.37 12.74c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.15-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.59-.75 2.99-.75 1.39 0 1.79.75 3.01.72 1.24-.02 2.03-1.13 2.79-2.25.88-1.29 1.24-2.53 1.26-2.6-.03-.01-2.42-.93-2.45-3.71zM14.08 5.98c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.02.08 2.07-.52 2.71-1.29z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <mask id="play-cut"><rect width="24" height="24" fill="#fff"/><path d="M4.4 3 15 13.6M4.4 21 15 10.4" stroke="#000" stroke-width="1.3"/></mask>
+        <path mask="url(#play-cut)" fill="currentColor" d="M4.5 2.6c-.4.2-.7.6-.7 1.2v16.4c0 .6.3 1 .7 1.2.4.2.9.2 1.3 0l14.3-8.2c.9-.5.9-1.9 0-2.4L5.8 2.6c-.4-.2-.9-.2-1.3 0z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="zyro.games home">
+        <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo-word">zyro<i>.</i>games</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#studio">Studio</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="btn btn-dark btn-sm" href="index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-label">
+        <span>Independent game studio</span>
+        <span>iOS &amp; Android</span>
+      </div>
+      <h1>Games that feel good in&nbsp;your&nbsp;hands.</h1>
+      <div class="hero-foot">
+        <p>We design, build and ship original 3D mobile games: time-bending puzzles, endless runners, physics action and deep underground adventures.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#games">See our games <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="#studio">About the studio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHELF: every game at a glance -->
+    <section class="wrap" aria-label="Our games at a glance">
+      <div class="shelf" id="shelf"></div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="section wrap">
+      <header class="section-top">
+        <h2>Games <sup id="game-count">05</sup></h2>
+        <div class="tabs" id="tabs" role="toolbar" aria-label="Filter by genre"></div>
+      </header>
+      <div class="game-grid" id="game-grid"></div>
+    </section>
+
+    <!-- STUDIO -->
+    <section id="studio" class="section wrap">
+      <p class="label">The studio</p>
+      <p class="statement">
+        zyro is a small, independent studio. We make the games we want to play:
+        tight controls, honest mechanics and visuals that stand out, with
+        <em>no pay-to-win</em>.
+      </p>
+      <ol class="principles">
+        <li>
+          <span class="num">01</span>
+          <h3>Real 3D</h3>
+          <p>Every game is rendered in full 3D with custom shaders and lighting.</p>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <h3>Touch first</h3>
+          <p>Native iOS and Android builds, designed from the ground up for touch.</p>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <h3>Fair by design</h3>
+          <p>Progression you earn and difficulty you can master. Never bought.</p>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <h3>Gameplay first</h3>
+          <p>No ads-first design. Monetisation never dictates the level design.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section wrap">
+      <div class="split">
+        <div>
+          <p class="label">Process</p>
+          <h2 class="h2">How a zyro game gets&nbsp;made</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="num">01</span><div><h3>Prototype</h3><p>One core mechanic, built fast and judged on a single question: is it fun in the first ten seconds?</p></div></li>
+          <li><span class="num">02</span><div><h3>Playtest</h3><p>Real players on real devices. We watch, measure and cut anything that adds friction.</p></div></li>
+          <li><span class="num">03</span><div><h3>Polish</h3><p>Lighting, shaders, haptics and sound, then level tuning until the difficulty curve feels earned.</p></div></li>
+          <li><span class="num">04</span><div><h3>Ship &amp; support</h3><p>Launch on the App Store and Google Play, then keep improving based on player feedback.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section wrap">
+      <div class="split">
+        <div>
+          <p class="label">FAQ</p>
+          <h2 class="h2">Questions</h2>
+          <p class="muted">Anything else? Write to <a class="u" href="mailto:hello@zyro.games">hello@zyro.games</a>.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>When will the games be available?<svg class="ic"><use href="#i-plus"/></svg></summary>
+            <p>Our titles are in development. Store links will appear on each game's page as soon as it launches. Email us if you'd like to hear about releases.</p>
+          </details>
+          <details>
+            <summary>Which devices are supported?<svg class="ic"><use href="#i-plus"/></svg></summary>
+            <p>Every zyro game is built natively for iOS and Android, and designed for touch screens first.</p>
+          </details>
+          <details>
+            <summary>Are your games pay-to-win?<svg class="ic"><use href="#i-plus"/></svg></summary>
+            <p>No. Progression is earned through play, and difficulty is something you master, not something you buy your way past.</p>
+          </details>
+          <details>
+            <summary>How do I report a bug?<svg class="ic"><use href="#i-plus"/></svg></summary>
+            <p>Email <a class="u" href="mailto:hello@zyro.games?subject=Bug%20report">hello@zyro.games</a> with the game name, your device model and OS version, and what happened. Screenshots or a screen recording help a lot.</p>
+          </details>
+          <details>
+            <summary>Can I write about your games?<svg class="ic"><use href="#i-plus"/></svg></summary>
+            <p>Yes, please. Email us with your outlet and we'll send icons, screenshots and game information.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <a class="contact-mail" href="mailto:hello@zyro.games">hello@zyro.games</a>
+      <p class="contact-sub">Feedback, press, partnerships or a bug report. We read every message.</p>
+      <ul class="topics">
+        <li><a href="mailto:hello@zyro.games?subject=Player%20feedback">Player feedback <svg class="ic"><use href="#i-arrow-ne"/></svg></a></li>
+        <li><a href="mailto:hello@zyro.games?subject=Bug%20report">Report a bug <svg class="ic"><use href="#i-arrow-ne"/></svg></a></li>
+        <li><a href="mailto:hello@zyro.games?subject=Press%20enquiry">Press &amp; media <svg class="ic"><use href="#i-arrow-ne"/></svg></a></li>
+        <li><a href="mailto:hello@zyro.games?subject=Partnership%20enquiry">Partnerships <svg class="ic"><use href="#i-arrow-ne"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-cols">
+        <div class="footer-about">
+          <a class="logo logo-invert" href="index.html" aria-label="zyro.games home">
+            <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="logo-word">zyro<i>.</i>games</span>
+          </a>
+          <p>Independent studio making original 3D games for iOS and Android.</p>
+        </div>
+        <div>
+          <h4>Games</h4>
+          <ul id="footer-games"></ul>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="index.html#studio">About</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@zyro.games">hello@zyro.games</a></li>
+            <li><a href="mailto:hello@zyro.games?subject=Press%20enquiry">Press</a></li>
+            <li><a href="mailto:hello@zyro.games?subject=Bug%20report">Report a bug</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-word" aria-hidden="true">zyro<i>.</i></div>
+      <div class="footer-bottom">
+        <span>© <span class="year"></span> zyro.games. All rights reserved.</span>
+        <a href="#top" onclick="window.scrollTo({top:0});return false;">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="games.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
